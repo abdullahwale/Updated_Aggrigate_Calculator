@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.k_jay.aggrigate_calculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/a_icon_squre"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/a_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".bcs_Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".master_Activity" android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>
